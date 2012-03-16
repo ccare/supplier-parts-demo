@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:field="urn:jsptagdir:/WEB-INF/tags/form/fields" xmlns:form="urn:jsptagdir:/WEB-INF/tags/form" xmlns:jsp="http://java.sun.com/JSP/Page" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <form:update id="fu_com_kasabi_demo_suppliersparts_domain_Address" modelAttribute="address" path="/addresses" versionField="Version" z="klSAN3xiCpR4HUqxZNmA2YR48iY=">
+        <field:input field="line1" id="c_com_kasabi_demo_suppliersparts_domain_Address_line1" required="true" z="7TjH3jcwCQnYUxNO6dvyNQM4Uxw="/>
+        <field:input field="line2" id="c_com_kasabi_demo_suppliersparts_domain_Address_line2" z="BeV6lxB1/dX18DEm4rXOUpb5Pes="/>
+        <field:input field="line3" id="c_com_kasabi_demo_suppliersparts_domain_Address_line3" z="m6fTvK2VS39Tq7gdCbyCDcM3I08="/>
+        <field:input field="city" id="c_com_kasabi_demo_suppliersparts_domain_Address_city" z="++NMN4AYnOKSCikCHKQ9fubQunw="/>
+        <field:input field="postcode" id="c_com_kasabi_demo_suppliersparts_domain_Address_postcode" required="true" z="G00wq1UujDCSJXCjuLXna/b+o/U="/>
+    </form:update>
+</div>

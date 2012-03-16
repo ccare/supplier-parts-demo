@@ -1,0 +1,54 @@
+// Spring Roo 1.2.1.RELEASE [rev 6eae723] log opened at 2012-03-16 11:16:47
+hint
+quit
+// Spring Roo 1.2.1.RELEASE [rev 6eae723] log closed at 2012-03-16 11:16:50
+// Spring Roo 1.2.1.RELEASE [rev 6eae723] log opened at 2012-03-16 11:17:53
+hint
+project --topLevelPackage com.kasabi.demo.suppliersparts
+hint
+jpa setup --provider HIBERNATE --database HYPERSONIC_IN_MEMORY 
+hint
+entity jpa --class ~.domain.Customer --testAutomatically
+entity jpa --class ~.domain.Address --testAutomatically
+entity jpa --class ~.domain.Supplier --testAutomatically
+entity jpa --class ~.domain.Part --testAutomatically
+entity jpa --class ~.domain.Orderline --testAutomatically
+// [failed] entity jpa --class ~.domain.Order --testAutomatically
+entity jpa --class ~.domain.CustomerOrder --testAutomatically
+hint
+backup
+entity jpa --class ~.domain.Address
+field string --fieldName line1 --notNull
+field string --fieldName line2
+field string --fieldName line3
+field string --fieldName city
+field string --fieldName postcode --notNull 
+entity jpa --class ~.domain.Customer
+field string --fieldName firstname --notNull 
+field string --fieldName surname --notNull 
+field string --fieldName title 
+field reference --fieldName address --type ~.domain.Address
+entity jpa --class ~.domain.Supplier
+field string --fieldName name --notNull 
+field reference --fieldName address --type ~.domain.Address
+entity jpa --class ~.domain.Part
+field string --fieldName name --notNull 
+// [failed] field reference --fieldName color --type ~.vo.Color
+field string --fieldName color 
+help field  
+field number --fieldName weight --type double --decimalMin 0
+entity jpa --class ~.domain.Orderline
+field reference --fieldName supplier --type ~.domain.Supplier
+field reference --fieldName part --type ~.domain.Part
+field number --fieldName quanity --type int --decimalMin 0
+// [failed] entity jpa --class ~.domain.Order
+entity jpa --class ~.domain.CustomerOrder
+field reference --fieldName customer --type ~.domain.Customer
+// Spring Roo 1.2.1.RELEASE [rev 6eae723] log opened at 2012-03-16 11:35:56
+// Spring Roo 1.2.1.RELEASE [rev 6eae723] log opened at 2012-03-16 11:36:11
+entity jpa --class ~.domain.CustomerOrder
+// [failed] field reference --fieldName items --type ~.domain.Orderline --cardinality ONE_TO_MANY 
+// [failed] field reference --fieldName items --type ~.domain.Orderline --cardinality ONE_TO_MANY 
+field set --fieldName items --type ~.domain.Orderline --cardinality ONE_TO_MANY 
+web mvc setup
+web mvc all --package ~.web

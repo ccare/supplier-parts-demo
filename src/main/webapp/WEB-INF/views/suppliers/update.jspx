@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:field="urn:jsptagdir:/WEB-INF/tags/form/fields" xmlns:form="urn:jsptagdir:/WEB-INF/tags/form" xmlns:jsp="http://java.sun.com/JSP/Page" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <form:update id="fu_com_kasabi_demo_suppliersparts_domain_Supplier" modelAttribute="supplier" path="/suppliers" versionField="Version" z="Lu+Abzf1PWV43m68kiXtYT+z+j0=">
+        <field:input field="name" id="c_com_kasabi_demo_suppliersparts_domain_Supplier_name" required="true" z="psJEiFIfL34kq+h+WRwz0WaLwO0="/>
+        <field:select field="address" id="c_com_kasabi_demo_suppliersparts_domain_Supplier_address" itemValue="id" items="${addresses}" path="/addresses" z="wkPwVGCFXnErE3iFMHJNgnjmaGo="/>
+    </form:update>
+</div>

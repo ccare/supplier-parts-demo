@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:field="urn:jsptagdir:/WEB-INF/tags/form/fields" xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:page="urn:jsptagdir:/WEB-INF/tags/form" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <page:show id="ps_com_kasabi_demo_suppliersparts_domain_Customer" object="${customer}" path="/customers" z="vMlEJEM1HV9yhJRwOg1vQdqRM8Q=">
+        <field:display field="firstname" id="s_com_kasabi_demo_suppliersparts_domain_Customer_firstname" object="${customer}" z="Vyc+buyLHS9ugCB280qzlyxINww="/>
+        <field:display field="surname" id="s_com_kasabi_demo_suppliersparts_domain_Customer_surname" object="${customer}" z="NPRlV4xGifA760DSiA8l7sXashA="/>
+        <field:display field="title" id="s_com_kasabi_demo_suppliersparts_domain_Customer_title" object="${customer}" z="iczC0LRuCxEugxOBw4f1MrQZte4="/>
+        <field:display field="address" id="s_com_kasabi_demo_suppliersparts_domain_Customer_address" object="${customer}" z="xbtDhbUEP/pg6D75lQB0ZazmHFY="/>
+    </page:show>
+</div>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:page="urn:jsptagdir:/WEB-INF/tags/form" xmlns:table="urn:jsptagdir:/WEB-INF/tags/form/fields" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <page:list id="pl_com_kasabi_demo_suppliersparts_domain_Supplier" items="${suppliers}" z="jpwqi84C9IV24uL6FDUVX/lmA+Y=">
+        <table:table data="${suppliers}" id="l_com_kasabi_demo_suppliersparts_domain_Supplier" path="/suppliers" z="LfS8FByNFK5qUswTo4PyKw7fn5g=">
+            <table:column id="c_com_kasabi_demo_suppliersparts_domain_Supplier_name" property="name" z="U5trcg2VVaOSFPCJdi/eFyaIUGc="/>
+            <table:column id="c_com_kasabi_demo_suppliersparts_domain_Supplier_address" property="address" z="uG6nYaKeu+VEagPz20PIZ8P1jd0="/>
+        </table:table>
+    </page:list>
+</div>

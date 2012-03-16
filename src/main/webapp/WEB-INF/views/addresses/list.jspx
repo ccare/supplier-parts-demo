@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:page="urn:jsptagdir:/WEB-INF/tags/form" xmlns:table="urn:jsptagdir:/WEB-INF/tags/form/fields" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <page:list id="pl_com_kasabi_demo_suppliersparts_domain_Address" items="${addresses}" z="QMjZE3GgQkCmGhcZVYptRxIa8Fs=">
+        <table:table data="${addresses}" id="l_com_kasabi_demo_suppliersparts_domain_Address" path="/addresses" z="PsQArMwe+bFPYdxWfhobEUMP1Pg=">
+            <table:column id="c_com_kasabi_demo_suppliersparts_domain_Address_line1" property="line1" z="bISxyeLg7oRw6wkbdBctaYs48bw="/>
+            <table:column id="c_com_kasabi_demo_suppliersparts_domain_Address_line2" property="line2" z="c+gZ/C8+NLw2GXPY6tvSm5QJ0mo="/>
+            <table:column id="c_com_kasabi_demo_suppliersparts_domain_Address_line3" property="line3" z="8xPdmucAigHQDEoa6dO3x5O3sUQ="/>
+            <table:column id="c_com_kasabi_demo_suppliersparts_domain_Address_city" property="city" z="e0eRbr6Vi9FkHUhbKKjY3IXi4W4="/>
+            <table:column id="c_com_kasabi_demo_suppliersparts_domain_Address_postcode" property="postcode" z="ys8YSTjmTkUdgaqVuDqLVhUlAxs="/>
+        </table:table>
+    </page:list>
+</div>

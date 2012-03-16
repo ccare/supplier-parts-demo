@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:page="urn:jsptagdir:/WEB-INF/tags/form" xmlns:table="urn:jsptagdir:/WEB-INF/tags/form/fields" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <page:list id="pl_com_kasabi_demo_suppliersparts_domain_Part" items="${parts}" z="zhbxggD7wlU+N8Qfix5ViuBPscs=">
+        <table:table data="${parts}" id="l_com_kasabi_demo_suppliersparts_domain_Part" path="/parts" z="EgvSGkB5UjZqx9qyJ/vdLBnmGaw=">
+            <table:column id="c_com_kasabi_demo_suppliersparts_domain_Part_name" property="name" z="HPqFOGUO9Du16YoVb2jI8SjGwbU="/>
+            <table:column id="c_com_kasabi_demo_suppliersparts_domain_Part_color" property="color" z="v4+SdT66E3XOdUIen8FTS66I9wg="/>
+            <table:column id="c_com_kasabi_demo_suppliersparts_domain_Part_weight" property="weight" z="M5c/zSH+LN1gWoYZkphtpLjcY3U="/>
+        </table:table>
+    </page:list>
+</div>
