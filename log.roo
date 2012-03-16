@@ -52,3 +52,5 @@ entity jpa --class ~.domain.CustomerOrder
 field set --fieldName items --type ~.domain.Orderline --cardinality ONE_TO_MANY 
 web mvc setup
 web mvc all --package ~.web
+// Spring Roo 1.2.1.RELEASE [rev 6eae723] log opened at 2012-03-16 12:01:00
+jpa setup --provider HIBERNATE --database HYPERSONIC_PERSISTENT
